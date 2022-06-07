@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="Work in Progress!" />
         <p className="description">
-          Updates coming soon <code>pages/index.js</code>
+          Updates coming soon
         </p>
       </main>
 
