@@ -4,6 +4,7 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
+
     <div className="container">
       <Head>
         <title>Anna Hjerpyn!</title>
@@ -11,9 +12,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Work in Progress!" />
+        <Header title="ANNA HJERPYN" />
         <p className="description">
-          Updates coming soon
         </p>
       </main>
     </div>

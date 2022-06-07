@@ -11,12 +11,11 @@ body {
 }
 
 main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  font-weight: 1000;
+  
 }
 
 code {
@@ -27,9 +26,10 @@ code {
 }
 
 .container {
+  background: #fffaee;
+  font-family: Futura;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
