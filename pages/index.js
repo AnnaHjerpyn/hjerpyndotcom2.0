@@ -16,8 +16,6 @@ export default function Home() {
           Updates coming soon
         </p>
       </main>
-
-      <Footer />
     </div>
   )
 }
