@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Anna Hjerpyn</title>
       </Head>
+      <meta name="description" content="Computer Science and Engineering student at OSU"></meta>
       <main>
         <Header title="ANNA HJERPYN*" />
         <div className="links">
