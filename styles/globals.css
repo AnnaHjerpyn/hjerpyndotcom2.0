@@ -88,12 +88,10 @@ ul{
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
-  margin:auto;
 }
 
 li {
   list-style-type: none;
-  margin: auto;
 }
 
 button {
@@ -117,4 +115,10 @@ button:active {
 body::-webkit-scrollbar-thumb {
   background-color: black;
   outline: 1px solid slategrey;
+}
+
+@media only screen {
+  body{
+    font-weight: 100;
+  }
 }
