@@ -11,11 +11,10 @@ body {
 }
 
 main {
-  flex: 1;
   display: flex;
   align-items: center;
   font-weight: 1000;
-  
+  flex-direction: column;
 }
 
 code {
@@ -32,4 +31,41 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+body
+{
+ text-align:center;
+}
+
+.info {
+  margin-bottom: 600px;
+  padding: 10px;
+  flex:auto;
+  text-align: center;
+  font-size: large;
+}
+
+a:visited, a:link {
+  color:#fffaee;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+button {
+  background-color: black;
+  border: none;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 14px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: black;
+  transform: translateY(2px);
 }
