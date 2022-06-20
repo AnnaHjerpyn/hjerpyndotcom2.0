@@ -20,6 +20,39 @@ export default function Home() {
           <p className="description">
             I'm currently a student at the Ohio State University studying Computer Science and Engineering with interests in Web Development and Bioinformatics.
           </p>
+        <div className="edu">
+          <h3>EDUCATION</h3>
+          BACHELOR OF SCIENCE IN COMPUTER SCIENCE AND ENGINEERING
+          <br></br>
+          May 2023 / the Ohio State University / Columbus, OH
+        </div>
+          <h3>SKILLS</h3>
+          <ul>
+            <li>Python, proficient</li>
+            <li>C++, proficient</li>
+            <li>HTML/CSS, proficient</li>
+            <li>GitHub, proficient</li>
+            <li>Java, proficient</li>
+            <li>JavaScript, proficient</li>
+            <li>MATLAB, proficient</li>
+            <li>Excel, proficient</li>
+            <li>R, intermediate</li>
+            <li>SOLIDWORKS, intermediate</li>
+          </ul>
+          <h3>RELEVANT COURSEWORK</h3>
+          <ul>
+            <li>Web Design and Development</li>
+            <li>Introduction to Computer Science I & II</li>
+            <li>Systems I: Introduction to Low-Level Programming and Computer Organization</li>
+            <li>Foundations I: Discrete Structures</li>
+            <li>Foundations II: Data Structures and Algorithms</li>
+            <li>Introduction to Digital Logic</li>
+            <li>Introduction to Analog Systems and Circuits</li>
+            <li>Software I: Software Components</li>
+            <li>Software II: Software Development and Design</li>
+            <li>Introduction to Python 3 Programming</li>
+            <li>Information Security</li>
+          </ul>
         </div>
       </main>
     </div>
