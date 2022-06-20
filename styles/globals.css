@@ -12,10 +12,10 @@ body {
 
 main {
   display: flex;
-  align-items: center;
   font-weight: 1000;
   flex-direction: column;
   margin: auto;
+  padding: 10px;
 }
 
 code {
@@ -50,11 +50,26 @@ body
 }
 
 a:visited, a:link {
-  color:#fffaee;
+  color:black;
   font-weight: bold;
   text-decoration: none;
 }
 
+h1 {
+  padding-left: 9.5px;
+  font-size: 60px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  flex-wrap: row;
+  margin: 0px 15px;
+  display: inline-block;
+  font-size: 25px;
+}
 
 button {
   background-color: black;

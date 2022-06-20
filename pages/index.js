@@ -4,23 +4,17 @@ import Footer from '@components/Footer'
 
 export default function Home() {
   return (
-  <div className="container">
+    <div className="container">
+    <meta name="description" content="Computer Science and Engineering student at OSU"></meta>
       <Head>
         <title>Anna Hjerpyn</title>
       </Head>
-      <meta name="description" content="Computer Science and Engineering student at OSU"></meta>
       <main>
         <Header title="ANNA HJERPYN*" />
         <div className="links">
-          <button>
-            <a href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank">LINKEDIN</a>
-          </button>
-          <button>
-            <a href="https://github.com/AnnaHjerpyn" target="_blank">GITHUB</a>
-          </button>
-          <button>
-            <a href="mailto:hjerpyn.2@osu.edu" target="_blank">EMAIL </a>
-          </button>
+          <span><a href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank">LINKEDIN</a></span>
+          <span><a href="https://github.com/AnnaHjerpyn" target="_blank">GITHUB</a></span>
+          <span><a href="mailto:hjerpyn.2@osu.edu" target="_blank">EMAIL</a></span>
         </div>
         <div className="info">
           <p className="description">
