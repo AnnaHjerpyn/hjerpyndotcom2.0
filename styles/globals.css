@@ -15,6 +15,7 @@ main {
   align-items: center;
   font-weight: 1000;
   flex-direction: column;
+  margin: auto;
 }
 
 code {
@@ -25,6 +26,7 @@ code {
 }
 
 .container {
+  margin: auto;
   background: #fffaee;
   font-family: Futura;
   height: 100vh;
@@ -39,8 +41,9 @@ body
 }
 
 .info {
+  margin-top: auto;
   margin-bottom: 600px;
-  padding: 10px;
+  padding: 25px;
   flex:auto;
   text-align: center;
   font-size: large;
