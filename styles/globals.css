@@ -65,6 +65,9 @@ h1 {
   padding-left: 9.5px;
   font-size: 60px;
 }
+ p {
+   margin: auto;
+ }
 
 h3 {
   padding-top: 10px;
@@ -73,6 +76,7 @@ h3 {
 
 a:hover {
   text-decoration: underline;
+  color: #7dcade;
 }
 
 span {
@@ -84,13 +88,14 @@ span {
 
 ul{
   display: inline-block;
-  padding: 10px;
+  margin: auto;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
 }
 
 li {
+  margin-right: 40px;
   list-style-type: none;
 }
 

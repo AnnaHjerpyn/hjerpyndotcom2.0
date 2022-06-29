@@ -22,9 +22,9 @@ export default function Home() {
           </p>
         <div className="edu">
           <h3>EDUCATION</h3>
-          BACHELOR OF SCIENCE IN COMPUTER SCIENCE AND ENGINEERING
+          Bachelor of Science in Computer Science and Engineering
           <br></br>
-          May 2023 / the Ohio State University / Columbus, OH
+          May 2023 | the Ohio State University | Columbus, OH
         </div>
           <h3>SKILLS</h3>
           <ul>
