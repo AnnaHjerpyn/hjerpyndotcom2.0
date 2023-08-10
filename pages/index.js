@@ -24,7 +24,7 @@ export default function Home() {
           <h3>EDUCATION</h3>
           Bachelor of Science in Computer Science and Engineering
           <br></br>
-          May 2023 | the Ohio State University | Columbus, OH
+          May 2024 | the Ohio State University | Columbus, OH
         </div>
           <h3>SKILLS</h3>
           <ul>
