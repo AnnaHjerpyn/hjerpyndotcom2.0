@@ -1,5 +1,6 @@
 /* Reset styles */
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -16,24 +17,29 @@ html, body {
   white-space: nowrap;
   position: relative;
   width: 100%;
-  height: 25px; 
+  height: 25px;
 }
 
 .moving-text {
   position: absolute;
   top: 0;
-  right: 0%; /* Start from the right edge, outside the container */
-  width: 100%; /* Increase container width for larger effect */
+  right: 0%;
+  /* Start from the right edge, outside the container */
+  width: 100%;
+  /* Increase container width for larger effect */
   animation: moveText 12s linear infinite;
   font-size: 20px;
 }
 
 @keyframes moveText {
   0% {
-    transform: translateX(70%); /* Move from right to left */
+    transform: translateX(70%);
+    /* Move from right to left */
   }
+
   100% {
-    transform: translateX(-100%); /* Move out on the left */
+    transform: translateX(-100%);
+    /* Move out on the left */
   }
 }
 
@@ -47,6 +53,7 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 /* Container */
@@ -73,6 +80,12 @@ main {
 }
 
 /* Headings */
+.header {
+  position: relative;
+  
+  /* Ensure the header is positioned relatively */
+}
+
 h1 {
   padding-left: 10px;
   font-size: 70px;
@@ -80,21 +93,17 @@ h1 {
 }
 
 .links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  top: 65%; /* Position below the header */
+  background-color: #fffaee;
+  padding: 10px;
 }
 
-.right-link-pair {
-  text-align: right;
-}
-
-.left-link-pair {
-  text-align: left;
-}
-
-.link-pair a {
-  margin-right: 10px; /* Adjust this value as needed */
+.links a {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 15px; /* Add margin to create space between links */
+  
 }
 
 h3 {
@@ -104,7 +113,8 @@ h3 {
 }
 
 /* Links */
-a:visited, a:link {
+a:visited,
+a:link {
   color: black;
   font-weight: bold;
   text-decoration: none;
@@ -130,6 +140,29 @@ ul {
 
 li {
   margin-right: 40px;
+}
+
+/* Information component */
+.info {
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 25px;
+  position: relative;
+  font-size: 18px;
+}
+
+.section-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 18px;
+}
+
+.section-list {
+  padding-left: 20px;
+  font-size: 18px;
 }
 
 /* Buttons */
@@ -167,13 +200,58 @@ button:active {
   font-size: 18px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  /* Adjust padding as needed */
+  background-color: #fffaee;
+  /* Set your header's background color */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 36px;
+  /* Adjust font size as needed */
+  margin-right: 20px;
+  /* Add spacing between title and button */
+}
+
+.mobile-nav-button {
+  display: none;
+  /* Hide the button by default on larger screens */
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.burger-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px auto;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.mobile-nav-active .burger-icon {
+  transform: rotate(90deg);
+}
+
+
 /* Footer */
 .footer {
   color: #000;
   font-weight: 100;
   padding: 10px 0;
   text-align: center;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto;
+  /* Push the footer to the bottom */
 }
 
 .footer div {
@@ -183,8 +261,10 @@ button:active {
 }
 
 .footer p {
-  margin: 0; /* Remove default margin */
-  padding: 3px 0; /* Add a small padding to separate the two lines */
+  margin: 0;
+  /* Remove default margin */
+  padding: 3px 0;
+  /* Add a small padding to separate the two lines */
 }
 
 /* Code blocks */
@@ -203,58 +283,28 @@ body::-webkit-scrollbar-thumb {
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
-  main {
-    padding: 20px;
-  }
-
-  .info {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-  
-  a {
-    margin-bottom: 5px;
-  }
-
-.mobile-nav-button {
-  display: none; /* Hide by default on larger screens */
-  cursor: pointer;
-}
-
-.burger-icon {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: #000;
-  margin: 6px auto;
-  transition: transform 0.3s;
-}
-
-.mobile-nav-active .links {
-  display: block; /* Show the links when mobile-nav-active class is applied */
-}
-
-/* Add a media query for mobile screens */
-@media only screen and (max-width: 768px) {
-  .mobile-nav-button {
-    display: block; /* Show the mobile navigation button on smaller screens */
+  .title {
+    font-size: 24px;
+    /* Adjust font size for smaller screens */
   }
 
   .links {
-    display: none; /* Hide the links by default on smaller screens */
+    display: none;
   }
 
-  .mobile-nav-active .burger-icon {
-    transform: rotate(90deg); /* Rotate the burger icon when the menu is active */
+  .mobile-nav-active .links a {
+    font-size: 12px;
+    display: block;
+    margin-right: 10px; /* Adjust margin for smaller screens */
   }
-}
 
+  .mobile-nav-active .links {
+    display: block;
+    /* Show the links when mobile-nav-active class is applied */
+  }
+
+  .mobile-nav-button {
+    display: block;
+    /* Show the button on smaller screens */
+  }
 }
