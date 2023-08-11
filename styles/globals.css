@@ -24,6 +24,7 @@ html, body {
   left: 0; /* Start from the left edge */
   width: 200%; /* Increase container width for larger effect */
   animation: moveText 20s linear infinite; /* Adjust the animation duration */
+  transform: translateX(0); /* Start with the text visible on the left */
 }
 
 @keyframes moveText {
