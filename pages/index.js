@@ -10,7 +10,9 @@ export default function Home() {
         <title>Anna Hjerpyn</title>
       </Head>
       <main>
-        <div className="site-preheader">Work In Progress!</div>
+        <div className="site-preheader moving-text-container">
+          <span className="moving-text">Work In Progress! Work In Progress! Work In Progress!</span>
+        </div>
         <Header title="ANNA HJERPYN*" />
         <div className="links">
           <span><a href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank">LINKEDIN</a></span>

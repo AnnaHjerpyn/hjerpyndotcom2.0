@@ -10,6 +10,29 @@ html, body {
   box-sizing: border-box;
 }
 
+/* Moving text animation */
+.moving-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.moving-text {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  animation: moveText 10s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* Preheader bar */
 .site-preheader {
   width: 100%;
