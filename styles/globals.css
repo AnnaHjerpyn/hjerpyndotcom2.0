@@ -15,6 +15,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center horizontally */
   margin: 0 auto;
   padding: 10px;
   font-weight: 400; /* Adjust font weight as needed */
@@ -70,10 +71,12 @@ a:hover {
 h1 {
   padding-left: 10px;
   font-size: 40px; /* Adjust font size as needed */
+  text-align: center; /* Center horizontally */
 }
 
 h3 {
   padding-top: 10px;
+  text-align: center; /* Center horizontally */
 }
 
 /* Lists */
