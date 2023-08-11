@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <div className="site-preheader moving-text-container">
-          <span className="moving-text">Work In Progress! Work In Progress! Work In Progress!</span>
+          <span className="moving-text">Work In Progress!</span>
         </div>
         <Header title="ANNA HJERPYN*" />
         <div className="links">

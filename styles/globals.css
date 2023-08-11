@@ -15,23 +15,23 @@ html, body {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  width: 100%; /* Set the width to 100% */
+  width: 100%; /* Set the width to 100% or adjust as needed */
 }
 
 .moving-text {
   position: absolute;
   top: 0;
   left: 0; /* Start from the left edge */
-  width: 100%; /* Occupy the entire width */
-  animation: moveText 10s linear infinite;
+  width: 200%; /* Increase container width for larger effect */
+  animation: moveText 20s linear infinite; /* Adjust the animation duration */
 }
 
 @keyframes moveText {
   0% {
-    transform: translateX(100%);
+    transform: translateX(100%); /* Move from right to left */
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-100%); /* Move out on the left */
   }
 }
 
