@@ -1,11 +1,14 @@
-import styles from './Footer.module.css'
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <>
-      <footer className={styles.footer}>
-        
-      </footer>
-    </>
-  )
-}
+    <footer className="footer">
+      <div>
+        <p>Copyright © 2023 Anna Hjerpyn.</p>
+        <p>All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

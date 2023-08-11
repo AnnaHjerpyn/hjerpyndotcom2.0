@@ -1,8 +1,16 @@
-import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Head from 'next/head';
+import Link from 'next/link';
+import { useState } from 'react'; // Import useState
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 export default function Home() {
+  const [isMobileNavActive, setMobileNavActive] = useState(false); // Initialize mobile nav state
+
+  const toggleMobileNav = () => {
+    setMobileNavActive(!isMobileNavActive); // Toggle mobile nav state
+  };
+
   return (
     <div className="container">
     <meta name="description" content="Computer Science and Engineering student at OSU"></meta>
@@ -13,11 +21,22 @@ export default function Home() {
         <div className="site-preheader moving-text-container">
           <span className="moving-text">Work In Progress!</span>
         </div>
-        <Header title="ANNA HJERPYN*" />
         <div className="links">
-          <span><a href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank">LINKEDIN</a></span>
-          <span><a href="https://github.com/AnnaHjerpyn" target="_blank">GITHUB</a></span>
-          <span><a href="mailto:hjerpyn.2@osu.edu" target="_blank">EMAIL</a></span>
+        <div className="left-link-pair">
+          <div className="link-pair">
+            <Link href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank">LINKEDIN</Link>
+          </div>
+            <Link href="https://github.com/AnnaHjerpyn" target="_blank">GITHUB</Link>
+          </div>
+          <Header title="ANNA HJERPYN*" />
+          <div className="right-link-pairs">
+            <div className="link-pair">
+              <Link href="mailto:hjerpyn.2@osu.edu" target="_blank">EMAIL</Link>
+            </div>
+            <div className="link-pair">
+              <Link href="/project"><a>PROJECTS</a></Link>
+            </div>
+          </div>
         </div>
         <div className="info">
           <p className="description">
@@ -25,7 +44,7 @@ export default function Home() {
           </p>
         <div className="edu">
           <h3>EDUCATION</h3>
-          Bachelor of Science in Computer Science and Engineering
+          Bachelor's of Science in Computer Science and Engineering
           <br></br>
           May 2024 | the Ohio State University | Columbus, OH
         </div>
@@ -57,7 +76,12 @@ export default function Home() {
             <li>Information Security</li>
           </ul>
         </div>
+        <div className="mobile-nav-button" onClick={toggleMobileNav}>
+          <span className={`burger-icon ${isMobileNavActive ? 'open' : ''}`}></span>
+        </div>
       </main>
+      <Footer />
     </div>
   )
+  
 }
