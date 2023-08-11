@@ -1,3 +1,4 @@
+/* Reset styles */
 html,
 body {
   padding: 0;
@@ -10,14 +11,16 @@ body {
   box-sizing: border-box;
 }
 
+/* Main content */
 main {
   display: flex;
-  font-weight: 1000;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
   padding: 10px;
+  font-weight: 400; /* Adjust font weight as needed */
 }
 
+/* Code blocks */
 code {
   background: #fffaee;
   border-radius: 5px;
@@ -25,53 +28,37 @@ code {
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
+/* Container */
 .container {
-  margin: auto;
   background: #fffaee;
-  font-family: Futura;
-  height: 100%;
-  width: 100%;
+  font-family: Futura, sans-serif;
+  height: 100vh; /* Adjust height as needed */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Education section */
 .edu {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-body
-{
-  text-align:center;
-}
-
+/* Information section */
 .info {
   margin-top: auto;
-  margin-bottom: 100px;
+  margin-bottom: 20px; /* Adjust margin as needed */
   padding: 25px;
-  flex:auto;
   text-align: center;
-  font-size: large;
+  font-size: 18px; /* Adjust font size as needed */
 }
 
-a:visited, a:link {
-  color:black;
+/* Links */
+a:visited,
+a:link {
+  color: black;
   font-weight: bold;
   text-decoration: none;
-}
-
-h1 {
-  padding-left: 9.5px;
-  font-size: 60px;
-}
- p {
-   margin: auto;
- }
-
-h3 {
-  padding-top: 10px;
-  flex-direction: column;
 }
 
 a:hover {
@@ -79,16 +66,22 @@ a:hover {
   color: #7dcade;
 }
 
-span {
-  flex-wrap: row;
-  margin: 0px 15px;
-  display: inline-block;
-  font-size: 25px;
+/* Headings */
+h1 {
+  padding-left: 10px;
+  font-size: 40px; /* Adjust font size as needed */
 }
 
-ul{
-  display: inline-block;
+h3 {
+  padding-top: 10px;
+}
+
+/* Lists */
+ul {
+  display: block;
   margin: auto;
+  padding: 0;
+  list-style-type: none;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
@@ -96,11 +89,12 @@ ul{
 
 li {
   margin-right: 40px;
-  list-style-type: none;
 }
 
+/* Buttons */
 button {
   background-color: black;
+  color: white;
   border: none;
   padding: 15px 45px;
   text-align: center;
@@ -116,14 +110,24 @@ button:active {
   transform: translateY(2px);
 }
 
-
+/* Scrollbar styles */
 body::-webkit-scrollbar-thumb {
   background-color: black;
   outline: 1px solid slategrey;
 }
 
-@media only screen {
-  body{
-    font-weight: 100;
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 20px; /* Adjust padding for mobile */
+  }
+
+  .info {
+    margin-bottom: 10px; /* Adjust margin for mobile */
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+
+  h1 {
+    font-size: 30px; /* Adjust font size for mobile */
   }
 }
