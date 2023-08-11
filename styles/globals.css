@@ -25,7 +25,7 @@ html, body {
   right: 0%; /* Start from the right edge, outside the container */
   width: 100%; /* Increase container width for larger effect */
   animation: moveText 12s linear infinite;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 @keyframes moveText {
@@ -43,7 +43,7 @@ html, body {
   background-color: #000000;
   color: #fffaed;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -223,7 +223,7 @@ body::-webkit-scrollbar-thumb {
   a {
     margin-bottom: 5px;
   }
-  
+
 .mobile-nav-button {
   display: none; /* Hide by default on larger screens */
   cursor: pointer;

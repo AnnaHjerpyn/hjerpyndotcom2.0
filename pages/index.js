@@ -21,17 +21,19 @@ export default function Home() {
         <div className="site-preheader moving-text-container">
           <span className="moving-text">Work In Progress!</span>
         </div>
-        <div className="links">
-        <div className="left-link-pair">
-          <div className="link-pair">
-            <Link href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank">LINKEDIN</Link>
-          </div>
-            <Link href="https://github.com/AnnaHjerpyn" target="_blank">GITHUB</Link>
+        <div className={`links ${isMobileNavActive ? 'mobile-nav-active' : ''}`}>
+          <div className="left-link-pair">
+            <div className="link-pair">
+              <Link href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank"><a>LINKEDIN</a></Link>
+            </div>
+            <div className="link-pair">
+              <Link href="https://github.com/AnnaHjerpyn" target="_blank"><a>GITHUB</a></Link>
+            </div>
           </div>
           <Header title="ANNA HJERPYN*" />
           <div className="right-link-pairs">
             <div className="link-pair">
-              <Link href="mailto:hjerpyn.2@osu.edu" target="_blank">EMAIL</Link>
+              <Link href="mailto:hjerpyn.2@osu.edu" target="_blank"><a>EMAIL</a></Link>
             </div>
             <div className="link-pair">
               <Link href="/project"><a>PROJECTS</a></Link>
