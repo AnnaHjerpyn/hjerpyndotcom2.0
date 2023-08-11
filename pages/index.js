@@ -5,12 +5,12 @@ import Footer from '@components/Footer'
 export default function Home() {
   return (
     <div className="container">
-    <div className="site-preheader">This is the preheader bar.</div>
     <meta name="description" content="Computer Science and Engineering student at OSU"></meta>
       <Head>
         <title>Anna Hjerpyn</title>
       </Head>
       <main>
+        <div className="site-preheader">This is the preheader bar.</div>
         <Header title="ANNA HJERPYN*" />
         <div className="links">
           <span><a href="https://www.linkedin.com/in/anna-hjerpyn-707806212" target="_blank">LINKEDIN</a></span>
