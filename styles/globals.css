@@ -12,13 +12,16 @@ html, body {
 
 /* Preheader bar */
 .site-preheader {
-  font-size: 0.6875rem;
-  font-weight: 700;
-  padding: 0.625rem;
-  text-align: center;
+  width: 100%;
   background-color: #000000;
   color: #fffaed;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
+
 
 /* Container */
 .container {
