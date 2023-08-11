@@ -5,6 +5,7 @@ import Footer from '@components/Footer'
 export default function Home() {
   return (
     <div className="container">
+    <div className="site-preheader">This is the preheader bar.</div>
     <meta name="description" content="Computer Science and Engineering student at OSU"></meta>
       <Head>
         <title>Anna Hjerpyn</title>
