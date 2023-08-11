@@ -15,18 +15,20 @@ html, body {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  width: 100%; /* Set the width to 100% */
 }
 
 .moving-text {
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 0; /* Start from the left edge */
+  width: 100%; /* Occupy the entire width */
   animation: moveText 10s linear infinite;
 }
 
 @keyframes moveText {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
     transform: translateX(-100%);
@@ -44,7 +46,6 @@ html, body {
   top: 0;
   left: 0;
 }
-
 
 /* Container */
 .container {
