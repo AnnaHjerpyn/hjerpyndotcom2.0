@@ -95,8 +95,8 @@ h1 {
 /* Links */
 .links {
   display: flex;
-  justify-content: space-between; /* Distribute space between link-pairs */
-  align-items: center;
+  flex-direction: column; /* Display links vertically */
+  align-items: center; /* Center links horizontally */
 }
 
 .link-pair {
@@ -215,9 +215,6 @@ button:active {
 
 .title {
   font-size: 50px;
-  /* Adjust font size as needed */
-  
-  /* Add spacing between title and button */
 }
 
 .mobile-nav-button {
@@ -282,28 +279,51 @@ body::-webkit-scrollbar-thumb {
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
   .title {
-    font-size: 24px;
+    font-size: 40px;
     /* Adjust font size for smaller screens */
   }
 
   .mobile-nav-button {
     display: block;
     /* Show the button on smaller screens */
-    margin-left: 10px; /* Add margin to create space between button and title */
+    margin-right: 10px; /* Add margin to create space between button and title */
+    
+  }
+
+  .links.hidden {
+    display: none; /* Hide the navigation menu links on larger screens */
   }
 
   .links {
     display: none;
   }
 
-  .mobile-nav-active .links a {
-    font-size: 12px;
-    display: block;
-    margin-right: 10px; /* Adjust margin for smaller screens */
+  .mobile-nav-active .header {
+    flex-direction: column;
+
   }
 
   .mobile-nav-active .links {
     display: block;
     /* Show the links when mobile-nav-active class is applied */
   }
+  
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: column; /* Display links vertically */
+  background-color: #fffaee; /* Add background color to links */
+  padding: 10px; /* Add padding to links */
+}
+
+.navigation-menu a {
+  font-size: 25px;
+  margin: 5px 0;
+  color: black; /* Add link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.hidden {
+  display:none;
 }
