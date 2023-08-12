@@ -79,10 +79,10 @@ main {
   flex: 1;
 }
 
+
 /* Headings */
 .header {
   position: relative;
-  
   /* Ensure the header is positioned relatively */
 }
 
@@ -92,18 +92,23 @@ h1 {
   text-align: center;
 }
 
+/* Links */
 .links {
-  position: absolute;
-  top: 65%; /* Position below the header */
-  background-color: #fffaee;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Distribute space between link-pairs */
+  align-items: center;
+}
+
+.link-pair {
+  display: flex;
+  flex-direction: column; /* Display the links vertically in pairs */
+  align-items: center; /* Center content horizontally */
+  margin: 0 15px; /* Add spacing between link-pairs */
 }
 
 .links a {
   font-size: 25px;
-  text-align: center;
-  margin: 0 15px; /* Add margin to create space between links */
-  
+  margin: 0 15px;
 }
 
 h3 {
@@ -117,9 +122,8 @@ a:visited,
 a:link {
   color: black;
   font-weight: bold;
+  font-size: 22px;
   text-decoration: none;
-  font-size: 25px;
-  margin-bottom: 10px;
 }
 
 a:hover {
@@ -205,20 +209,14 @@ button:active {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  /* Adjust padding as needed */
-  background-color: #fffaee;
-  /* Set your header's background color */
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-}
+
 
 .title {
-  font-size: 36px;
+  font-size: 50px;
   /* Adjust font size as needed */
-  margin-right: 20px;
+  
   /* Add spacing between title and button */
 }
 
@@ -288,6 +286,12 @@ body::-webkit-scrollbar-thumb {
     /* Adjust font size for smaller screens */
   }
 
+  .mobile-nav-button {
+    display: block;
+    /* Show the button on smaller screens */
+    margin-left: 10px; /* Add margin to create space between button and title */
+  }
+
   .links {
     display: none;
   }
@@ -301,10 +305,5 @@ body::-webkit-scrollbar-thumb {
   .mobile-nav-active .links {
     display: block;
     /* Show the links when mobile-nav-active class is applied */
-  }
-
-  .mobile-nav-button {
-    display: block;
-    /* Show the button on smaller screens */
   }
 }
