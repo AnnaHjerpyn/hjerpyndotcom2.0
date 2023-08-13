@@ -37,7 +37,7 @@ const Information = () => {
             I am a Computer Science and Engineering student at the Ohio State University, with a keen interest in Web Development and Bioinformatics.
           </p>
           <div className="edu">
-            <h3 className="section-heading">EDUCATION</h3>
+            <h2 className="section-heading">Education</h2>
             <p className="section-text">
               <span>Bachelor's of Science in Computer Science and Engineering</span>
               <br />
