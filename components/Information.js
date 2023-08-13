@@ -1,48 +1,79 @@
 import React from "react";
 
 const Information = () => {
+  const skills = [
+    "Python (proficient)",
+    "C++ (proficient)",
+    "HTML/CSS (proficient)",
+    "GitHub (proficient)",
+    "Java (proficient)",
+    "JavaScript (proficient)",
+    "MATLAB (proficient)",
+    "Excel (proficient)",
+    "R (intermediate)",
+    "SOLIDWORKS (intermediate)",
+  ];
+
+  const relevantCoursework = [
+    "Web Design and Development",
+    "Introduction to Computer Science I & II",
+    "Systems I: Introduction to Low-Level Programming and Computer Organization",
+    "Foundations I: Discrete Structures",
+    "Foundations II: Data Structures and Algorithms",
+    "Introduction to Digital Logic",
+    "Introduction to Analog Systems and Circuits",
+    "Software I: Software Components",
+    "Software II: Software Development and Design",
+    "Introduction to Python 3 Programming",
+    "Information Security",
+  ];
+
   return (
     <div className="info">
-      <p className="description">
-        I'm currently a student at the Ohio State University studying Computer
-        Science and Engineering with interests in Web Development and
-        Bioinformatics.
-      </p>
-      <div className="edu">
-        <h3 className="section-heading">EDUCATION</h3>
-        <p className="section-text">
-          Bachelor's of Science in Computer Science and Engineering
-          <br />
-          May 2024 | the Ohio State University | Columbus, OH
-        </p>
+      <div className="about-me">
+        <div className="section-border">
+          <h2>About Me</h2>
+          <p className="description">
+            I am a Computer Science and Engineering student at the Ohio State University, with a keen interest in Web Development and Bioinformatics.
+          </p>
+          <div className="edu">
+            <h3 className="section-heading">EDUCATION</h3>
+            <p className="section-text">
+              <span>Bachelor's of Science in Computer Science and Engineering</span>
+              <br />
+              <span>Expected Graduation: May 2024</span>
+              <br />
+              <span>The Ohio State University, Columbus, OH</span>
+            </p>
+          </div>
+        </div>
       </div>
-      <h3 className="section-heading">SKILLS</h3>
-      <ul className="section-list">
-        <li>Python, proficient</li>
-        <li>C++, proficient</li>
-        <li>HTML/CSS, proficient</li>
-        <li>GitHub, proficient</li>
-        <li>Java, proficient</li>
-        <li>JavaScript, proficient</li>
-        <li>MATLAB, proficient</li>
-        <li>Excel, proficient</li>
-        <li>R, intermediate</li>
-        <li>SOLIDWORKS, intermediate</li>
-      </ul>
-      <h3 className="section-heading">RELEVANT COURSEWORK</h3>
-      <ul className="section-list">
-        <li>Web Design and Development</li>
-        <li>Introduction to Computer Science I & II</li>
-        <li>Systems I: Introduction to Low-Level Programming and Computer Organization</li>
-        <li>Foundations I: Discrete Structures</li>
-        <li>Foundations II: Data Structures and Algorithms</li>
-        <li>Introduction to Digital Logic</li>
-        <li>Introduction to Analog Systems and Circuits</li>
-        <li>Software I: Software Components</li>
-        <li>Software II: Software Development and Design</li>
-        <li>Introduction to Python 3 Programming</li>
-        <li>Information Security</li>
-      </ul>
+
+      <div className="content-columns">
+        <div className="tab-column">
+          <div className="tab">
+            <button className="tab-button active">Skills</button>
+            <div className="tab-content">
+              <ul className="section-list">
+                {skills.map((skill, index) => (
+                  <li key={index}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="tab">
+            <button className="tab-button active">Relevant Coursework</button>
+            <div className="tab-content">
+              <ul className="section-list">
+                {relevantCoursework.map((course, index) => (
+                  <li key={index}>{course}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

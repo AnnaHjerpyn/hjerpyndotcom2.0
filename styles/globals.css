@@ -95,15 +95,20 @@ h1 {
 /* Links */
 .links {
   display: flex;
-  flex-direction: column; /* Display links vertically */
-  align-items: center; /* Center links horizontally */
+  flex-direction: column;
+  /* Display links vertically */
+  align-items: center;
+  /* Center links horizontally */
 }
 
 .link-pair {
   display: flex;
-  flex-direction: column; /* Display the links vertically in pairs */
-  align-items: center; /* Center content horizontally */
-  margin: 0 15px; /* Add spacing between link-pairs */
+  flex-direction: column;
+  /* Display the links vertically in pairs */
+  align-items: center;
+  /* Center content horizontally */
+  margin: 0 15px;
+  /* Add spacing between link-pairs */
 }
 
 .links a {
@@ -167,6 +172,8 @@ li {
 .section-list {
   padding-left: 20px;
   font-size: 18px;
+  margin-top: 10px; /* Adjust top margin for spacing */
+  margin-bottom: 0; /* Remove bottom margin */
 }
 
 /* Buttons */
@@ -195,12 +202,12 @@ button:active {
 }
 
 
-/* Information section */
+/* Information component */
 .info {
   margin-top: auto;
   margin-bottom: 20px;
   padding: 25px;
-  text-align: center;
+  position: relative;
   font-size: 18px;
 }
 
@@ -210,8 +217,6 @@ button:active {
   align-items: center;
   padding: 20px 40px;
 }
-
-
 
 .title {
   font-size: 50px;
@@ -286,12 +291,14 @@ body::-webkit-scrollbar-thumb {
   .mobile-nav-button {
     display: block;
     /* Show the button on smaller screens */
-    margin-right: 10px; /* Add margin to create space between button and title */
-    
+    margin-right: 10px;
+    /* Add margin to create space between button and title */
+
   }
 
   .links.hidden {
-    display: none; /* Hide the navigation menu links on larger screens */
+    display: none;
+    /* Hide the navigation menu links on larger screens */
   }
 
   .links {
@@ -307,23 +314,78 @@ body::-webkit-scrollbar-thumb {
     display: block;
     /* Show the links when mobile-nav-active class is applied */
   }
-  
+
 }
 
 .navigation-menu {
   display: flex;
-  flex-direction: column; /* Display links vertically */
-  background-color: #fffaee; /* Add background color to links */
-  padding: 10px; /* Add padding to links */
+  flex-direction: column;
+  /* Display links vertically */
+  background-color: #fffaee;
+  /* Add background color to links */
+  padding: 10px;
+  /* Add padding to links */
 }
 
 .navigation-menu a {
   font-size: 25px;
   margin: 5px 0;
-  color: black; /* Add link color */
-  text-decoration: none; /* Remove underline */
+  color: black;
+  /* Add link color */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .hidden {
-  display:none;
+  display: none;
+}
+
+.tab-button {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: black;
+}
+
+.tab-button.active {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+.about-me {
+  margin-bottom: 30px;
+}
+
+.section-border {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-border h2 {
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+}
+
+.about-me {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.content-columns {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
