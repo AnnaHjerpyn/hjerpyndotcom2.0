@@ -32,7 +32,7 @@ const Information = () => {
     <div className="info">
       <div className="about-me">
         <div className="section-border">
-          <h2>About Me</h2>
+          <h2 className="section-heading">About Me</h2>
           <p className="description">
             I am a Computer Science and Engineering student at the Ohio State University, with a keen interest in Web Development and Bioinformatics.
           </p>
@@ -51,7 +51,7 @@ const Information = () => {
 
       <div className="content-columns">
         <div className="tab-column">
-          <div className="tab">
+          <div className="tab section-border">
             <button className="tab-button active">Skills</button>
             <div className="tab-content">
               <ul className="section-list">
@@ -62,7 +62,7 @@ const Information = () => {
             </div>
           </div>
 
-          <div className="tab">
+          <div className="tab section-border">
             <button className="tab-button active">Relevant Coursework</button>
             <div className="tab-content">
               <ul className="section-list">
