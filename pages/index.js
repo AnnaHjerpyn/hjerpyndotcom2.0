@@ -21,6 +21,7 @@ export default function Home() {
         content="Computer Science and Engineering student at OSU"
       ></meta>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Anna Hjerpyn</title>
       </Head>
       <main>

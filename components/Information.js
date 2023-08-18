@@ -5,6 +5,8 @@ const Information = () => {
     "Python (proficient)",
     "C++ (proficient)",
     "HTML/CSS (proficient)",
+    "React (proficient)",
+    "Node (proficient)",
     "GitHub (proficient)",
     "Java (proficient)",
     "JavaScript (proficient)",
