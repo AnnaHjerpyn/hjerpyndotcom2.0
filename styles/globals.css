@@ -1,7 +1,6 @@
 /* Reset styles */
 html,
 body {
-  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   overflow-x: hidden;
@@ -53,7 +52,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
 }
 
 /* Container */
@@ -62,28 +60,18 @@ body {
   font-family: Futura, sans-serif;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Main content */
 main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 0 auto;
   padding: 10px;
   font-weight: 400;
   flex: 1;
-}
-
-
-/* Headings */
-.header {
-  position: relative;
-  /* Ensure the header is positioned relatively */
 }
 
 h1 {
@@ -117,7 +105,6 @@ h1 {
 }
 
 h3 {
-  padding-top: 10px;
   text-align: center;
   font-size: 24px;
 }
@@ -151,18 +138,8 @@ li {
   margin-right: 40px;
 }
 
-/* Information component */
-.info {
-  margin-top: auto;
-  margin-bottom: 20px;
-  padding: 25px;
-  position: relative;
-  font-size: 18px;
-}
-
 .section-heading {
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .section-text {
@@ -173,7 +150,6 @@ li {
   padding-left: 20px;
   font-size: 18px;
   margin-top: 10px; /* Adjust top margin for spacing */
-  margin-bottom: 0; /* Remove bottom margin */
 }
 
 /* Buttons */
@@ -204,8 +180,7 @@ button:active {
 
 /* Information component */
 .info {
-  margin-top: auto;
-  margin-bottom: 20px;
+  
   padding: 25px;
   position: relative;
   font-size: 18px;
@@ -215,7 +190,7 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding-top: 25px;
 }
 
 .title {
