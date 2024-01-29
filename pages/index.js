@@ -32,6 +32,16 @@ export default function Index() {
     };
   }, []);
 
+  // Sample project data
+  const projects = [
+    {
+      title: "Project 1",
+      description: "Description for Project 1",
+      imageUrl: "/images/project1.jpg",
+    },
+    // Add more projects as needed
+  ];
+
   return (
     <div className={`container ${isMobileNavActive ? "mobile-nav-active" : ""}`}>
       <Head>
@@ -52,9 +62,6 @@ export default function Index() {
       <main className="main">
         {showIndexPage ? (
           <>
-            <div className="site-preheader moving-text-container">
-              <span className="moving-text">Work In Progress!</span>
-            </div>
             <Information />
             {showFooter && <Footer />}
           </>
