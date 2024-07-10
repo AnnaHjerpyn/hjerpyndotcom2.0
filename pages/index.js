@@ -39,7 +39,6 @@ export default function Index() {
       description: "Description for Project 1",
       imageUrl: "/images/project1.jpg",
     },
-    // Add more projects as needed
   ];
 
   return (
@@ -57,7 +56,6 @@ export default function Index() {
           isMobileNavActive || !showIndexPage ? "links" : "hidden"
         }`}
       >
-        {/* Add more links as needed */}
       </nav>
       <main className="main">
         {showIndexPage ? (
