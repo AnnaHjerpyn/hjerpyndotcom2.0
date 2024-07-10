@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div>
-        <p>Copyright © 2023 Anna Hjerpyn.</p>
+        <p>Copyright © 2023-2024 Anna Hjerpyn.</p>
         <p>All rights reserved.</p>
       </div>
     </footer>
