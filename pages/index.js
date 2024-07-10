@@ -32,21 +32,12 @@ export default function Index() {
     };
   }, []);
 
-  // Sample project data
-  const projects = [
-    {
-      title: "Project 1",
-      description: "Description for Project 1",
-      imageUrl: "/images/project1.jpg",
-    },
-  ];
-
   return (
     <div className={`container ${isMobileNavActive ? "mobile-nav-active" : ""}`}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Anna Hjerpyn</title>
-        <link rel="icon" href="/public/favicon.ico"/>
+        <link rel="icon" href="/public/favicon-anna.png" />
       </Head>
       {/* Conditionally render the Header only when showIndexPage is true */}
       {showIndexPage && (
