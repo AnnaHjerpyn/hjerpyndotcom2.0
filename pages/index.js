@@ -44,8 +44,9 @@ export default function Index() {
   return (
     <div className={`container ${isMobileNavActive ? "mobile-nav-active" : ""}`}>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Anna Hjerpyn</title>
+        <link rel="icon" href="/public/favicon.ico"/>
       </Head>
       {/* Conditionally render the Header only when showIndexPage is true */}
       {showIndexPage && (
